@@ -7,4 +7,10 @@ if len(sys.argv[1:]) < 2:
     print('none')
     quit()
 
-print(len(re.findall(sys.argv[1], sys.argv[2])))
+count: int = len(re.findall(sys.argv[1], sys.argv[2]))
+
+if count == 0:
+    print('none')
+    quit()
+
+print(count)

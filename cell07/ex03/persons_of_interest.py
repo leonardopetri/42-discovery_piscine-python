@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def famous_births(historical_figures: dict):
+def famous_births(historical_figures: dict) -> None:
     historical_figures_values = list(historical_figures.values())
     sorted_figures = sorted(historical_figures_values, key=lambda x: int(x["date_of_birth"]))
     for figures in sorted_figures:

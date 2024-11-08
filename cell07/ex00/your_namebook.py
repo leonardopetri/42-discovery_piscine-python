@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-import ctypes
-
-def array_of_names(persons: dict) -> ctypes.Array:
+def array_of_names(persons: dict) -> list:
     fullname = []
     for first_name in persons:
         fullname.append(f'{first_name.capitalize()} {persons[first_name].capitalize()}')

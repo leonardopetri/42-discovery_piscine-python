@@ -2,10 +2,10 @@
 
 import sys
 
-def shrink(param: str):
+def shrink(param: str) -> None:
     print(param[slice(8)])
 
-def enlarge(param: str):
+def enlarge(param: str) -> None:
     print(param + "z" * (8 - len(param)))
 
 if len(sys.argv[1:]) == 0:

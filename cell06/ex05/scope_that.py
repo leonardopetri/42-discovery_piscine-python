@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def add_one(value: int):
+def add_one(value: int) -> None:
     value += 1
 
 value_to_add: int = 10
